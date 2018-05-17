@@ -126,16 +126,16 @@
     <Compile Include="ViewModels\ShoppingCartViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Data\ASPNETDB.MDF">
+    <None Include="App_Data\ASPNETDB.MDFx">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
+    </None>
     <Content Include="App_Data\aspnetdb_log.ldf">
-      <DependentUpon>ASPNETDB.MDF</DependentUpon>
+      <DependentUpon>ASPNETDB.MDFx</DependentUpon>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="App_Data\MvcMusicStore.sdf">
+    <None Include="App_Data\MvcMusicStore.sdfx">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
+    </None>
     <Content Include="Content\Images\home-showcase.png" />
     <Content Include="Content\Images\logo.png" />
     <Content Include="Content\Images\placeholder.gif" />
