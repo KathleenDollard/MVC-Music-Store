@@ -4,9 +4,9 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using MvcMusicStore.Models;
+using MusicStore.Models;
 
-namespace MvcMusicStore.Migrations
+namespace MusicStore.Migrations
 {
     [DbContext(typeof(MusicStoreDBContext))]
     [Migration("20180517165325_Seed album data")]

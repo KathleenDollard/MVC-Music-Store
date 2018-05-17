@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace MvcMusicStore.Models
+namespace MusicStore.Models
 {
     public class Cart
     {

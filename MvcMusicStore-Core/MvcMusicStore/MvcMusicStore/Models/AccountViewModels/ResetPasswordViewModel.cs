@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace MvcMusicStore.Models.AccountViewModels
+namespace MusicStore.Models.AccountViewModels
 {
     public class ResetPasswordViewModel
     {

@@ -6,7 +6,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc.ModelBinding;
 
-namespace MvcMusicStore.Models.ManageViewModels
+namespace MusicStore.Models.ManageViewModels
 {
     public class EnableAuthenticatorViewModel
     {

@@ -2,10 +2,14 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace MvcMusicStore.Models
+namespace MusicStore.Models
 {
     public class MusicStoreDBContext : DbContext
     {
+        public MusicStoreDBContext(DbContextOptions<MusicStoreDBContext> options)
+               : base(options)
+        { }
+
         public DbSet<Album> Albums { get; set; }
         public DbSet<Genre> Genres { get; set; }
         public DbSet<Artist> Artists { get; set; }
@@ -26,7 +30,7 @@ namespace MvcMusicStore.Models
             AddSeedData(modelBuilder, GetAlbumData(genres, artists));
         }
 
-        private static void AddSeedData<T>(ModelBuilder modelBuilder, IEnumerable <T> list)
+        private static void AddSeedData<T>(ModelBuilder modelBuilder, IEnumerable<T> list)
             where T : class
         {
             foreach (T item in list)
@@ -199,7 +203,7 @@ namespace MvcMusicStore.Models
             new Artist { ArtistId = 148, Name = "Yo-Yo Ma" },
         };
 
-        private static IEnumerable <Album> GetAlbumData(IEnumerable<Genre> genres, IEnumerable<Artist> artists)
+        private static IEnumerable<Album> GetAlbumData(IEnumerable<Genre> genres, IEnumerable<Artist> artists)
         => new List<Album>()
         {
                     new Album { AlbumId = 1,  Title = "The Best Of Men At Work", Genre = genres.FirstOrDefault(g => g.Name == "Rock"), Price = 8.99M, Artist = artists.FirstOrDefault(a => a.Name == "Men At Work"), AlbumArtUrl = "/Content/Images/placeholder.gif" },
@@ -458,7 +462,7 @@ namespace MvcMusicStore.Models
             Price = a.Price,
             ArtistId = a.Artist.ArtistId,
             AlbumArtUrl = a.AlbumArtUrl
-        } );
+        });
 
     }
 }

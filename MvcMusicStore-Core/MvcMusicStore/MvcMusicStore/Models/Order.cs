@@ -2,7 +2,7 @@
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using Microsoft.AspNetCore.Mvc;
-namespace MvcMusicStore.Models
+namespace MusicStore.Models
 {
    // [Bind(Exclude = "OrderId")]
     public partial class Order

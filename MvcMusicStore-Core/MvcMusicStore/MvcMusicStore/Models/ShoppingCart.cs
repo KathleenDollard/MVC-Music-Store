@@ -5,28 +5,31 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace MvcMusicStore.Models
+namespace MusicStore.Models
 {
     public partial class ShoppingCart
     {
-        MusicStoreDBContext storeDB = new MusicStoreDBContext();
+        MusicStoreDBContext storeDB;
 
-        string ShoppingCartId { get; set; }
+         public ShoppingCart(MusicStoreDBContext dbContext)
+        {
+            this.storeDB = dbContext;
+        }       string ShoppingCartId { get; set; }
 
         public const string CartSessionKey = "CartId";
 
-        public static ShoppingCart GetCart(HttpContext context)
+        public static ShoppingCart GetCart(HttpContext context, MusicStoreDBContext dbContext)
         {
-            var cart = new ShoppingCart();
+            var cart = new ShoppingCart(dbContext);
             cart.ShoppingCartId = cart.GetCartId(context);
             return cart;
         }
 
-        // Helper method to simplify shopping cart calls
-        public static ShoppingCart GetCart(Controller controller)
-        {
-            return GetCart(controller.HttpContext);
-        }
+        //// Helper method to simplify shopping cart calls
+        //public static ShoppingCart GetCart(Controller controller)
+        //{
+        //    return GetCart(controller.HttpContext,controller.);
+        //}
 
         public void AddToCart(Album album)
         {

@@ -3,9 +3,9 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using MvcMusicStore.Models;
+using MusicStore.Models;
 
-namespace MvcMusicStore.Migrations
+namespace MusicStore.Migrations
 {
     [DbContext(typeof(MusicStoreDBContext))]
     partial class MusicStoreDBContextModelSnapshot : ModelSnapshot

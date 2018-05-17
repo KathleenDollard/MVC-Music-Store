@@ -1,8 +1,8 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
-using MvcMusicStore.Models;
+using MusicStore.Models;
 
-namespace MvcMusicStore.Data
+namespace MusicStore.Data
 {
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {

@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Identity;
 
-namespace MvcMusicStore.Models.ManageViewModels
+namespace MusicStore.Models.ManageViewModels
 {
     public class ExternalLoginsViewModel
     {

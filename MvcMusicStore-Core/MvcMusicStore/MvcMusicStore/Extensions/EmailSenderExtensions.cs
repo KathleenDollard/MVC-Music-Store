@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text.Encodings.Web;
 using System.Threading.Tasks;
-using MvcMusicStore.Services;
+using MusicStore.Services;
 
-namespace MvcMusicStore.Services
+namespace MusicStore.Services
 {
     public static class EmailSenderExtensions
     {

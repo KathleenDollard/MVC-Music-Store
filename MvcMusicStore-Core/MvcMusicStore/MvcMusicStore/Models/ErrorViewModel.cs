@@ -1,6 +1,6 @@
 using System;
 
-namespace MvcMusicStore.Models
+namespace MusicStore.Models
 {
     public class ErrorViewModel
     {

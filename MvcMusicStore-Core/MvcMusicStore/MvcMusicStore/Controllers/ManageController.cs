@@ -10,11 +10,11 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
-using MvcMusicStore.Models;
-using MvcMusicStore.Models.ManageViewModels;
-using MvcMusicStore.Services;
+using MusicStore.Models;
+using MusicStore.Models.ManageViewModels;
+using MusicStore.Services;
 
-namespace MvcMusicStore.Controllers
+namespace MusicStore.Controllers
 {
     [Authorize]
     [Route("[controller]/[action]")]

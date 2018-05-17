@@ -1,7 +1,7 @@
 ﻿using System;
 using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace MvcMusicStore.Migrations
+namespace MusicStore.Migrations
 {
     public partial class Initcoredatabas : Migration
     {

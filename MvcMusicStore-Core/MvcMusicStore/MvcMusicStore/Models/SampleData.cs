@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 
-namespace MvcMusicStore.Models
+namespace MusicStore.Models
 {
     //public class SampleData : DropCreateDatabaseIfModelChanges<MusicStoreDBContext>
     //{

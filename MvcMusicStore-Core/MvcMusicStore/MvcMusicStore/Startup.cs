@@ -8,11 +8,11 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using MvcMusicStore.Data;
-using MvcMusicStore.Models;
-using MvcMusicStore.Services;
+using MusicStore.Data;
+using MusicStore.Models;
+using MusicStore.Services;
 
-namespace MvcMusicStore
+namespace MusicStore
 {
     public class Startup
     {
@@ -28,6 +28,8 @@ namespace MvcMusicStore
         {
             services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+            services.AddDbContext<MusicStoreDBContext>(options =>
+                options.UseSqlServer(Configuration.GetConnectionString("MusicStore")));
 
             services.AddIdentity<ApplicationUser, IdentityRole>()
                 .AddEntityFrameworkStores<ApplicationDbContext>()

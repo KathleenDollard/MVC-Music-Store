@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
 
-namespace MvcMusicStore.Models
+namespace MusicStore.Models
 {
    // [Bind(PropertyFilter = "AlbumId")]
     public class Album
