@@ -1,3 +1,9 @@
+I forked this fork of the CodePlex repo so I would have code to use in workshops. 
+
+It probably serves no other purpose as I've broken it doing a partial conversion.
+
+
+----- NOTES FROM THE ORIGINAL
 MVC Music Store tutorial for ASP.NET MVC 3 Tools Update - v3.0 release of this tutorial
 
 The code and tutorial can be downloaded from http://mvcmusicstore.codeplex.com/
